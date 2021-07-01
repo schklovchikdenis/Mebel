@@ -24,3 +24,32 @@
 		display: block;
 	}
 }
+
+
+._icon-case:before {
+  content: "\e900";
+}
+._icon-line1:before {
+  content: "\e901";
+}
+._icon-line2:before {
+  content: "\e902";
+}
+._icon-office:before {
+  content: "\e903";
+}
+._icon-phone:before {
+  content: "\e904";
+}
+._icon-phone1:before {
+  content: "\e905";
+}
+._icon-place:before {
+  content: "\e906";
+}
+._icon-reguest:before {
+  content: "\e907";
+}
+._icon-star:before {
+  content: "\e908";
+}
