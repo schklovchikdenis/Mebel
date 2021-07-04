@@ -1,5 +1,112 @@
 //====================================================================================================
+.header {
+   // .header__wrapper
+   &__wrapper {
+      height: 112px;
+      padding: 40px 0px 0px 0px;
+   }
 
+   // .header__body
+   &__body {
+      display: flex;
+      flex: 0 1 50%;
+   }
+
+   // .header__left
+   &__left {
+      flex: 0 0 320px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @media (max-width: 420px) {
+         flex: 0 1 320px;
+      }
+   }
+   &__right {
+      display: flex;
+      flex: 0 1 100%;
+      align-items: center;
+   }
+
+   // .header__logo
+   &__logo {
+      margin: 0px 38px 0px 0px;
+   }
+
+   // .header__text
+   &__text {
+      flex: 0 1 260px;
+      font-size: 14px;
+      line-height: 140%;
+      @media (max-width: 420px) {
+         display: none;
+      }
+   }
+
+   // .header__phone
+   &__phone {
+      display: flex;
+      flex: 0 1 100%;
+      align-items: center;
+      justify-content: flex-end;
+      p {
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 140%;
+         @media (max-width: 660px) {
+            display: none;
+         }
+      }
+   }
+}
+
+.link {
+   // .link__phone
+   &__phone {
+      font-family: "Roboto-Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      color: $blueColor;
+      height: 40px;
+      border: 2px solid $blueColor;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 0px 0px 32px;
+      flex: 0 1 280px;
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover) {
+         &:hover {
+            color: $whiteColor;
+            background-color: $blueColor;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease 0s;
+         }
+      }
+      @media (max-width: 920px) {
+         display: none;
+      }
+   }
+}
+
+// ._icon-phone
+._icon-phone {
+   display: none;
+   font-size: 40px;
+   color: $whiteColor;
+   height: 40px;
+   width: 40px;
+   background-color: $blueColor;
+   border: 1px solid $blueColor;
+   border-radius: 5px;
+   margin: 0px 0px 0px 20px;
+   @media (max-width: 920px) {
+      display: block;
+   }
+}
 //====================================================================================================
 
 /*
