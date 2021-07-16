@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+@@include('_head.html',{
+"title":"Domeo"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<section class="vacancy">
+				<div class="vacancy__container _container">
+					<div class="vacancy__wrapper">
+						<div class="vacancy__description description-vacancy">
+							<h1 class="description-vacancy__title">
+								Вакансия: комплектатор интерьера
+							</h1>
+							<h3 class="description-vacancy__subtitle">
+								Работа с лучшими условиями в отрасли с «белой»
+								зарплатой от 150 000 ₽ до 300 000 ₽ в Domeo!
+							</h3>
+							<div class="description-vacancy__body">
+								<div class="description-vacancy__item">
+									<div class="description-vacancy__star _icon-star"></div>
+									<div class="description-vacancy__text">Зарплата без задержек <p>2 раза в месяц</p></div>
+								</div>
+								<div class="description-vacancy__item">
+									<div class="description-vacancy__star _icon-star"></div>
+									<div class="description-vacancy__text">Официальное <p>трудоустройство</p></div>
+								</div>
+								<div class="description-vacancy__item">
+									<div class="description-vacancy__star _icon-star"></div>
+									<div class="description-vacancy__text">Полный соц. пакет и возможность роста до руководителя	отдела</div>
+								</div>
+								<div class="description-vacancy__item">
+									<div class="description-vacancy__star _icon-star"></div>
+									<div class="description-vacancy__text">Работайте в своем темпе
+										<p>без простоя в заказах</p></div>
+								</div>
+							</div>
+							<div class="description-vacancy__salary">Узнайте прямо сейчас все актуальные вакансии с белой зарплатой до 300 000₽</div>
+							<a href="#" class="description-vacancy__link _btn">Узнать
+								все актуальные вакансии</a>
+						</div>
+
+						<div class="vacancy__img _ibg">
+							<img src="img/1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
 </html>
