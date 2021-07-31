@@ -9,24 +9,16 @@
    &__input {
    }
    &__button {
-      height: 72px;
-      border-radius: 8px;
-      background-color: $blueColor;
       width: 100%;
-      text-transform: uppercase;
-      color: $whiteColor;
       font-size: 16px;
       line-height: 140%;
       font-weight: 700;
-		letter-spacing: 0.03em;
+      letter-spacing: 0.03em;
       display: flex;
-      justify-content: center;
-      align-items: center;
-		box-shadow: 4px 12px 40px rgba(47, 128, 237, 0.35);
    }
    &__error {
-		margin: 0px 0px 10px 0px;
-		color: red;
+      margin: 0px 0px 10px 0px;
+      color: red;
    }
    &__label {
       display: inline-block;
@@ -41,11 +33,22 @@
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
    display: inline-flex;
-   padding: 0px 0px;
-   // @media (min-width: 992px) {
-   //    &:hover {
-   //    }
-   // }
+   padding: 0px 65px;
+   min-height: 72px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-radius: 8px;
+   background-color: $blueColor;
+   color: $whiteColor;
+   text-transform: uppercase;
+   transition: box-shadow 0.3s ease 0s;
+   @media (min-width: 992px) {
+      &:hover {
+         transition: box-shadow 0.3s ease 0s;
+         box-shadow: 4px 12px 40px rgba(47, 128, 237, 0.35);
+      }
+   }
    // &._fw {
    //    width: 100%;
    // }

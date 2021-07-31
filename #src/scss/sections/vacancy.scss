@@ -1,91 +1,129 @@
 .vacancy {
-   // .vacancy__container
-   &__container {
-   }
    // .vacancy__wrapper
    &__wrapper {
-      // @include adaptiv-value("padding-top", 64, 22, 1);
       @include adaptiv-value("padding-bottom", 64, 22, 1);
       display: flex;
-      border: 1px solid red;
-   }
-   // .vacancy__description
-   &__description {
    }
 }
-
-// ._icon-star
-._icon-star {
+.vacancy__container{
+   position: relative;
 }
-
-.description-vacancy {
-   flex: 0 1 708px;
-   // .description-vacancy__title
+.description {
    &__title {
+      border: 1px solid blue;
       font-weight: bold;
-      @include adaptiv-value("font-size", 56, 28, 1);
+      @include adaptiv-value("font-size", 56, 26, 1);
       line-height: 100%;
       @include adaptiv-value("margin-top", 64, 20, 1);
       @include adaptiv-value("margin-bottom", 60, 12, 1);
+      display: flex;
+      
+      @media (max-width: 375px) {
+         text-align: center;
+         p {
+            flex: 0 1 340px;
+         }
+      }
    }
-   // .description-vacancy__subtitle
+
    &__subtitle {
-      font-size: 28px;
-      line-height: 140%;
-      // @include adaptiv-value("margin-bottom", 98, 20, 1);
+      display: flex;
+      p {
+         font-size: 28px;
+         line-height: 140%;
+         flex: 0 1 708px;
+         @media (min-width: $md3+px) {
+            flex: 0 1 470px;
+         }
+         @media (max-width: $md3+px) {
+            // flex: 0 1 440px;
+         }
+      }
       &:not(:last-child) {
-         // margin: 0px 0px 98px 0px;
          @include adaptiv-value("margin-bottom", 98, 20, 1);
       }
    }
+   &__img {
+      @include adaptiv-value("width", 454, 335, 1);
+      @include adaptiv-value("padding-bottom", 788, 580, 1);
+      border: 1px solid grey;
+      @media (min-width: $md3+px) {
+         position: absolute;
+         right: 0;
+         top: 150px;
+         z-index: -1;
+      }
+      @media (min-width: 1090px) {
+         top: 0;
+         
+      }
+   }
+}
+
+.description-vacancy {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid green;
+   position: relative;
+   @media (min-width: $md3+px) {
+      max-width: 390px;
+   }
+   @media (min-width: 990px) {
+      max-width: 800px;
+   }
+
    // .description-vacancy__body
    &__body {
       display: flex;
       flex-wrap: wrap;
       margin-left: -72px;
    }
+
    // .description-vacancy__item
    &__item {
-      flex: 0 1 50%;
+      //
       display: flex;
       align-items: center;
       padding-left: 72px;
       margin: 0px 0px 28px 0px;
       @include adaptiv-value("margin-bottom", 28, 16, 1);
+      @media (min-width: 990px) {
+         flex: 0 1 50%;
+      }
    }
+
    // .description-vacancy__star
    &__star {
       font-size: 40px;
       color: $blueColor;
       margin: 0px 12px 0px 0px;
    }
+
    // .description-vacancy__text
    &__text {
       font-size: 16px;
       line-height: 140%;
    }
+
    // .description-vacancy__salary
    &__salary {
       @include adaptiv-value("margin-top", 65, 16, 1);
+      margin-bottom: 10px;
       font-size: 14px;
       line-height: 140%;
-      // display: inline-block;
-      // width: 100%;
-      // max-width: 324px;  
-      display: flex;
-      flex: 1 1 324px;    
+      display: inline-block;
+      width: 100%;
+      max-width: 324px;
    }
+
    // .description-vacancy__link
    &__link {
-      display: flex;
-   }
-}
-
-.vacancy {
-   // .vacancyacancy__img
-   &__img {
-      // width: 454px;
-      flex: 1 1 auto;
-      padding-bottom: 80%;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      width: 100%;
+      max-width: 390px;
    }
 }

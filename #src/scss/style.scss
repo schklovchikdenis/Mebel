@@ -99,3 +99,45 @@ body {
 //===================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
+section.vacancy {
+	.vacancy__container._container {
+		h1.description__title {
+			p {}
+		}
+		h3.description__subtitle {
+			p {}
+		}
+		.description__img._ibg {
+			img {}
+		}
+		.vacancy__description.description-vacancy {
+			.description-vacancy__body {
+				.description-vacancy__item {
+					.description-vacancy__star._icon-star {}
+					.description-vacancy__text {
+						p {}
+					}
+				}
+				.description-vacancy__item {
+					.description-vacancy__star._icon-star {}
+					.description-vacancy__text {
+						p {}
+					}
+				}
+				.description-vacancy__item {
+					.description-vacancy__star._icon-star {}
+					.description-vacancy__text {}
+				}
+				.description-vacancy__item {
+					.description-vacancy__star._icon-star {}
+					.description-vacancy__text {
+						p {}
+					}
+				}
+			}
+			p.description-vacancy__salary {}
+			a.description-vacancy__link.btn {}
+		}
+	}
+}
+
