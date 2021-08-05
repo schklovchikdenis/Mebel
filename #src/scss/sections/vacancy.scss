@@ -1,75 +1,94 @@
 .vacancy {
-   // .vacancy__wrapper
-   &__wrapper {
-      @include adaptiv-value("padding-bottom", 64, 22, 1);
-      display: flex;
-   }
-}
-.vacancy__container{
-   position: relative;
-}
-.description {
+   padding: 0px 0px 47px 0px;
    &__title {
-      border: 1px solid blue;
-      font-weight: bold;
-      @include adaptiv-value("font-size", 56, 26, 1);
-      line-height: 100%;
       @include adaptiv-value("margin-top", 64, 20, 1);
       @include adaptiv-value("margin-bottom", 60, 12, 1);
       display: flex;
-      
-      @media (max-width: 375px) {
-         text-align: center;
-         p {
-            flex: 0 1 340px;
+      @media (max-width: 710px) {
+         justify-content: center;
+      }
+      p {
+         font-size: 56px;
+         line-height: 100%;
+         font-weight: bold;
+         @media (max-width: 710px) {
+            text-align: center;
+            @include adaptiv-value("font-size", 70, 25, 1);
          }
       }
    }
 
    &__subtitle {
       display: flex;
+      @media (max-width: 450px) {
+         display: block;
+         span{
+            display: block;
+         }
+      }
       p {
          font-size: 28px;
          line-height: 140%;
-         flex: 0 1 708px;
-         @media (min-width: $md3+px) {
-            flex: 0 1 470px;
+         @media (min-width: 760px) {
+            flex: 0 1 708px;
          }
-         @media (max-width: $md3+px) {
-            // flex: 0 1 440px;
+
+         @media (max-width: 945px) {
+            flex: 0 1 391px;
+            font-size: 24px;
+         }
+         @media (max-width: 760px) {
+            flex: 0 1 708px;
+         }
+         @media (max-width: 710px) {
+            text-align: center;
+            @include adaptiv-value("font-size", 35, 15, 1);
          }
       }
       &:not(:last-child) {
          @include adaptiv-value("margin-bottom", 98, 20, 1);
       }
    }
+
    &__img {
-      @include adaptiv-value("width", 454, 335, 1);
-      @include adaptiv-value("padding-bottom", 788, 580, 1);
-      border: 1px solid grey;
-      @media (min-width: $md3+px) {
-         position: absolute;
-         right: 0;
-         top: 150px;
-         z-index: -1;
-      }
-      @media (min-width: 1090px) {
-         top: 0;
-         
+      text-align: center;
+      .girl__image {
+         justify-content: center;
+         align-items: center;
+         @media (min-width: 750px) {
+            position: absolute;
+            right: 0;
+            top: 120px;
+            z-index: -1;
+         }
+         @media (max-width: 760px) {
+            top: 230px;
+         }
+         @media (min-width: 1015px) {
+            top: 0;
+         }
       }
    }
 }
 
+.vacancy__container {
+   position: relative;
+}
+
+// .description-vacancy
 .description-vacancy {
    display: flex;
    flex-direction: column;
-   border: 1px solid green;
-   position: relative;
-   @media (min-width: $md3+px) {
-      max-width: 390px;
+   @media (max-width: 1090px) {
+      max-width: 422px;
    }
-   @media (min-width: 990px) {
-      max-width: 800px;
+   @media (min-width: 1015px) {
+      max-width: 705px;
+   }
+   @media (max-width: 749px) {
+      max-width: 100%;
+      justify-content: center;
+      align-items: center;
    }
 
    // .description-vacancy__body
@@ -81,14 +100,17 @@
 
    // .description-vacancy__item
    &__item {
-      //
       display: flex;
       align-items: center;
       padding-left: 72px;
-      margin: 0px 0px 28px 0px;
       @include adaptiv-value("margin-bottom", 28, 16, 1);
-      @media (min-width: 990px) {
+      @media (min-width: 1015px) {
          flex: 0 1 50%;
+      }
+      @media (max-width: 749px) {
+         display: block;
+         text-align: center;
+         flex: 0 1 100%;
       }
    }
 
@@ -105,14 +127,18 @@
       line-height: 140%;
    }
 
+   // .description-vacancy__footer
+   &__footer {
+      display: flex;
+      flex-direction: column;
+   }
+
    // .description-vacancy__salary
    &__salary {
       @include adaptiv-value("margin-top", 65, 16, 1);
       margin-bottom: 10px;
       font-size: 14px;
       line-height: 140%;
-      display: inline-block;
-      width: 100%;
       max-width: 324px;
    }
 
@@ -123,7 +149,15 @@
       line-height: 140%;
       letter-spacing: 0.03em;
       text-transform: uppercase;
-      width: 100%;
-      max-width: 390px;
+      display: flex;
+      @media (min-width: 768px) {
+         max-width: 384px;
+      }
+      @media (max-width: 800px) {
+         max-width: 312px;
+      }
+      @media (max-width: 749px) {
+         max-width: 100%;
+      }
    }
 }

@@ -262,7 +262,6 @@ body._lock {
 
 .btn {
   display: inline-flex;
-  padding: 0px 65px;
   min-height: 72px;
   justify-content: center;
   align-items: center;
@@ -1074,13 +1073,118 @@ body.ie ._ibg img {
 	}
 }
 */
-.vacancy__wrapper {
-  padding-bottom: 64px;
+.vacancy {
+  padding: 0px 0px 47px 0px;
+}
+.vacancy__title {
+  margin-top: 64px;
+  margin-bottom: 60px;
   display: flex;
 }
 @media (max-width: 1250px) {
-  .vacancy__wrapper {
-    padding-bottom: calc(22px + 42 * ((100vw - 320px) / 930));
+  .vacancy__title {
+    margin-top: calc(20px + 44 * ((100vw - 320px) / 930));
+  }
+}
+@media (max-width: 1250px) {
+  .vacancy__title {
+    margin-bottom: calc(12px + 48 * ((100vw - 320px) / 930));
+  }
+}
+@media (max-width: 710px) {
+  .vacancy__title {
+    justify-content: center;
+  }
+}
+.vacancy__title p {
+  font-size: 56px;
+  line-height: 100%;
+  font-weight: bold;
+}
+@media (max-width: 710px) {
+  .vacancy__title p {
+    text-align: center;
+    font-size: 70px;
+  }
+}
+@media (max-width: 710px) and (max-width: 1250px) {
+  .vacancy__title p {
+    font-size: calc(25px + 45 * ((100vw - 320px) / 930));
+  }
+}
+.vacancy__subtitle {
+  display: flex;
+}
+@media (max-width: 450px) {
+  .vacancy__subtitle {
+    display: block;
+  }
+  .vacancy__subtitle span {
+    display: block;
+  }
+}
+.vacancy__subtitle p {
+  font-size: 28px;
+  line-height: 140%;
+}
+@media (min-width: 760px) {
+  .vacancy__subtitle p {
+    flex: 0 1 708px;
+  }
+}
+@media (max-width: 945px) {
+  .vacancy__subtitle p {
+    flex: 0 1 391px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 760px) {
+  .vacancy__subtitle p {
+    flex: 0 1 708px;
+  }
+}
+@media (max-width: 710px) {
+  .vacancy__subtitle p {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+@media (max-width: 710px) and (max-width: 1250px) {
+  .vacancy__subtitle p {
+    font-size: calc(15px + 20 * ((100vw - 320px) / 930));
+  }
+}
+.vacancy__subtitle:not(:last-child) {
+  margin-bottom: 98px;
+}
+@media (max-width: 1250px) {
+  .vacancy__subtitle:not(:last-child) {
+    margin-bottom: calc(20px + 78 * ((100vw - 320px) / 930));
+  }
+}
+.vacancy__img {
+  text-align: center;
+}
+.vacancy__img .girl__image {
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 750px) {
+  .vacancy__img .girl__image {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: -1;
+  }
+}
+@media (max-width: 760px) {
+  .vacancy__img .girl__image {
+    top: 230px;
+  }
+}
+@media (min-width: 1015px) {
+  .vacancy__img .girl__image {
+    top: 0;
   }
 }
 
@@ -1088,102 +1192,25 @@ body.ie ._ibg img {
   position: relative;
 }
 
-.description__title {
-  border: 1px solid blue;
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 100%;
-  margin-top: 64px;
-  margin-bottom: 60px;
-  display: flex;
-}
-@media (max-width: 1250px) {
-  .description__title {
-    font-size: calc(26px + 30 * ((100vw - 320px) / 930));
-  }
-}
-@media (max-width: 1250px) {
-  .description__title {
-    margin-top: calc(20px + 44 * ((100vw - 320px) / 930));
-  }
-}
-@media (max-width: 1250px) {
-  .description__title {
-    margin-bottom: calc(12px + 48 * ((100vw - 320px) / 930));
-  }
-}
-@media (max-width: 375px) {
-  .description__title {
-    text-align: center;
-  }
-  .description__title p {
-    flex: 0 1 340px;
-  }
-}
-.description__subtitle {
-  display: flex;
-}
-.description__subtitle p {
-  font-size: 28px;
-  line-height: 140%;
-  flex: 0 1 708px;
-}
-@media (min-width: 767.98px) {
-  .description__subtitle p {
-    flex: 0 1 470px;
-  }
-}
-.description__subtitle:not(:last-child) {
-  margin-bottom: 98px;
-}
-@media (max-width: 1250px) {
-  .description__subtitle:not(:last-child) {
-    margin-bottom: calc(20px + 78 * ((100vw - 320px) / 930));
-  }
-}
-.description__img {
-  width: 454px;
-  padding-bottom: 788px;
-  border: 1px solid grey;
-}
-@media (max-width: 1250px) {
-  .description__img {
-    width: calc(335px + 119 * ((100vw - 320px) / 930));
-  }
-}
-@media (max-width: 1250px) {
-  .description__img {
-    padding-bottom: calc(580px + 208 * ((100vw - 320px) / 930));
-  }
-}
-@media (min-width: 767.98px) {
-  .description__img {
-    position: absolute;
-    right: 0;
-    top: 150px;
-    z-index: -1;
-  }
-}
-@media (min-width: 1090px) {
-  .description__img {
-    top: 0;
-  }
-}
-
 .description-vacancy {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
-  position: relative;
 }
-@media (min-width: 767.98px) {
+@media (max-width: 1090px) {
   .description-vacancy {
-    max-width: 390px;
+    max-width: 422px;
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 1015px) {
   .description-vacancy {
-    max-width: 800px;
+    max-width: 705px;
+  }
+}
+@media (max-width: 749px) {
+  .description-vacancy {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
 .description-vacancy__body {
@@ -1195,7 +1222,6 @@ body.ie ._ibg img {
   display: flex;
   align-items: center;
   padding-left: 72px;
-  margin: 0px 0px 28px 0px;
   margin-bottom: 28px;
 }
 @media (max-width: 1250px) {
@@ -1203,9 +1229,16 @@ body.ie ._ibg img {
     margin-bottom: calc(16px + 12 * ((100vw - 320px) / 930));
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 1015px) {
   .description-vacancy__item {
     flex: 0 1 50%;
+  }
+}
+@media (max-width: 749px) {
+  .description-vacancy__item {
+    display: block;
+    text-align: center;
+    flex: 0 1 100%;
   }
 }
 .description-vacancy__star {
@@ -1217,13 +1250,15 @@ body.ie ._ibg img {
   font-size: 16px;
   line-height: 140%;
 }
+.description-vacancy__footer {
+  display: flex;
+  flex-direction: column;
+}
 .description-vacancy__salary {
   margin-top: 65px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 140%;
-  display: inline-block;
-  width: 100%;
   max-width: 324px;
 }
 @media (max-width: 1250px) {
@@ -1237,8 +1272,22 @@ body.ie ._ibg img {
   line-height: 140%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 100%;
-  max-width: 390px;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .description-vacancy__link {
+    max-width: 384px;
+  }
+}
+@media (max-width: 800px) {
+  .description-vacancy__link {
+    max-width: 312px;
+  }
+}
+@media (max-width: 749px) {
+  .description-vacancy__link {
+    max-width: 100%;
+  }
 }
 
 .page {

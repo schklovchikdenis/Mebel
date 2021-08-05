@@ -10,17 +10,22 @@
 		<main class="page">
 			<section class="vacancy">
 				<div class="vacancy__container _container">
-					<h1 class="description__title">
+					<h1 class="vacancy__title">
 						<p>Вакансия: <br>комплектатор интерьера</p>
 					</h1>
-					<h3 class="description__subtitle">
+					<h3 class="vacancy__subtitle">
 						<p>
-							Работа с лучшими условиями в отрасли с «белой»
-							зарплатой от 150 000 ₽ до 300 000 ₽ в Domeo!
+							Работа с лучшими условиями в отрасли
+							<span>с «белой» зарплатой</span> от 150 000 ₽ до 300 000 ₽ в Domeo!
 						</p>
 					</h3>
-					<div class="description__img _ibg">
-						<img src="img/1.png" alt="Девушка"></img>
+					<div class="vacancy__img">
+						<picture>
+							<source srcset="img/1.png" type="image/png" media="(min-width:1100px)">
+							<source srcset="img/11.png" type="image/png" media="(min-width:761px)">
+							<source srcset="img/12.png" type="image/png" media="(max-width:760px)">
+							<img src="img/1.png" class="girl__image" alt="Девушка">
+						</picture>
 					</div>
 
 					<div class="vacancy__description description-vacancy">
@@ -37,8 +42,7 @@
 							</div>
 							<div class="description-vacancy__item">
 								<div class="description-vacancy__star _icon-star"></div>
-								<div class="description-vacancy__text">Полный соц. пакет и возможность роста до
-									руководителя
+								<div class="description-vacancy__text">Полный соц. пакет и возможность роста до руководителя
 									отдела
 								</div>
 							</div>
@@ -49,15 +53,13 @@
 								</div>
 							</div>
 						</div>
-						
-						<p class="description-vacancy__salary">Узнайте прямо сейчас все актуальные вакансии с белой
-							зарплатой до 300 000₽</p>
-						<a href="#" class="description-vacancy__link btn">Узнать
-							<br>все актуальные вакансии</a>
 
-						<!-- <div class="vacancy__img _ibg">
-                            <img src="img/1.png" alt="Девушка">
-                        </div> -->
+						<div class="description-vacancy__footer">
+							<p class="description-vacancy__salary">Узнайте прямо сейчас все актуальные вакансии с белой
+								зарплатой до 300 000₽</p>
+							<a href="#" class="description-vacancy__link btn">Узнать
+								<br>все актуальные вакансии</a>
+						</div>
 					</div>
 				</div>
 			</section>
