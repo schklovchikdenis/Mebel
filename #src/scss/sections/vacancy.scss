@@ -1,5 +1,5 @@
 .vacancy {
-   padding: 176px 0px 47px 0px;
+   padding: 176px 0px 48px 0px;
    @media (max-width: $md4+px) {
       padding-top: 100px;
    }
@@ -66,7 +66,7 @@
          align-items: center;
          @media (min-width: 761px) {
             position: absolute;
-            right: 0;
+            right: -30px;
             top: 180px;
             z-index: -1;
          }
@@ -74,7 +74,7 @@
             top: 200px;
             margin-bottom: 16px;
          }
-         @media (min-width: 1015px) {
+         @media (min-width: 1010px) {
             top: -20px;
          }
       }
