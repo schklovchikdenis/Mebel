@@ -926,9 +926,25 @@ body.ie ._ibg img {
   padding: 0px 64px 0px 0px;
   margin: 0px 0px 20px 0px;
 }
+.header._scroll .header__wrapper {
+  padding: 10px 0px;
+  box-shadow: 0px 10px 20px rgba(47, 128, 237, 0.35);
+  transition: all 0.3s ease 0s;
+}
 .header__wrapper {
-  height: 112px;
-  padding: 40px 0px 0px 0px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  padding: 40px 0px 40px 0px;
+  background-color: white;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 479.98px) {
+  .header__wrapper {
+    padding: 10px 0px;
+  }
 }
 .header__body {
   display: flex;
@@ -1074,26 +1090,21 @@ body.ie ._ibg img {
 }
 */
 .vacancy {
-  padding: 0px 0px 47px 0px;
+  padding: 176px 0px 47px 0px;
+}
+@media (max-width: 479.98px) {
+  .vacancy {
+    padding-top: 100px;
+  }
 }
 .vacancy__title {
-  margin-top: 64px;
-  margin-bottom: 60px;
+  margin-bottom: 68px;
   display: flex;
 }
-@media (max-width: 1250px) {
-  .vacancy__title {
-    margin-top: calc(20px + 44 * ((100vw - 320px) / 930));
-  }
-}
-@media (max-width: 1250px) {
-  .vacancy__title {
-    margin-bottom: calc(12px + 48 * ((100vw - 320px) / 930));
-  }
-}
-@media (max-width: 710px) {
+@media (max-width: 760px) {
   .vacancy__title {
     justify-content: center;
+    margin-bottom: 12px;
   }
 }
 .vacancy__title p {
@@ -1101,13 +1112,13 @@ body.ie ._ibg img {
   line-height: 100%;
   font-weight: bold;
 }
-@media (max-width: 710px) {
+@media (max-width: 760px) {
   .vacancy__title p {
     text-align: center;
     font-size: 70px;
   }
 }
-@media (max-width: 710px) and (max-width: 1250px) {
+@media (max-width: 760px) and (max-width: 1250px) {
   .vacancy__title p {
     font-size: calc(25px + 45 * ((100vw - 320px) / 930));
   }
@@ -1115,7 +1126,7 @@ body.ie ._ibg img {
 .vacancy__subtitle {
   display: flex;
 }
-@media (max-width: 450px) {
+@media (max-width: 760px) {
   .vacancy__subtitle {
     display: block;
   }
@@ -1143,13 +1154,13 @@ body.ie ._ibg img {
     flex: 0 1 708px;
   }
 }
-@media (max-width: 710px) {
+@media (max-width: 760px) {
   .vacancy__subtitle p {
     text-align: center;
     font-size: 35px;
   }
 }
-@media (max-width: 710px) and (max-width: 1250px) {
+@media (max-width: 760px) and (max-width: 1250px) {
   .vacancy__subtitle p {
     font-size: calc(15px + 20 * ((100vw - 320px) / 930));
   }
@@ -1157,9 +1168,14 @@ body.ie ._ibg img {
 .vacancy__subtitle:not(:last-child) {
   margin-bottom: 98px;
 }
-@media (max-width: 1250px) {
+@media (max-width: 768px) {
   .vacancy__subtitle:not(:last-child) {
-    margin-bottom: calc(20px + 78 * ((100vw - 320px) / 930));
+    margin-bottom: 72px;
+  }
+}
+@media (max-width: 760px) {
+  .vacancy__subtitle:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 .vacancy__img {
@@ -1169,22 +1185,23 @@ body.ie ._ibg img {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 750px) {
+@media (min-width: 761px) {
   .vacancy__img .girl__image {
     position: absolute;
     right: 0;
-    top: 120px;
+    top: 180px;
     z-index: -1;
   }
 }
 @media (max-width: 760px) {
   .vacancy__img .girl__image {
-    top: 230px;
+    top: 200px;
+    margin-bottom: 16px;
   }
 }
 @media (min-width: 1015px) {
   .vacancy__img .girl__image {
-    top: 0;
+    top: -20px;
   }
 }
 
@@ -1206,7 +1223,7 @@ body.ie ._ibg img {
     max-width: 705px;
   }
 }
-@media (max-width: 749px) {
+@media (max-width: 760px) {
   .description-vacancy {
     max-width: 100%;
     justify-content: center;
@@ -1234,7 +1251,7 @@ body.ie ._ibg img {
     flex: 0 1 50%;
   }
 }
-@media (max-width: 749px) {
+@media (max-width: 760px) {
   .description-vacancy__item {
     display: block;
     text-align: center;
@@ -1264,6 +1281,11 @@ body.ie ._ibg img {
 @media (max-width: 1250px) {
   .description-vacancy__salary {
     margin-top: calc(16px + 49 * ((100vw - 320px) / 930));
+  }
+}
+@media (max-width: 760px) {
+  .description-vacancy__salary {
+    text-align: center;
   }
 }
 .description-vacancy__link {
