@@ -1,5 +1,5 @@
 //<МИКСИНЫ>===============================================================================================
-@import "mixins";
+@import "libs/mixins";
 //</МИКСИНЫ>===============================================================================================
 
 //<ШРИФТЫ>===============================================================================================
@@ -10,7 +10,7 @@
 //</Подключаем шрифты>=======================================================================================
 
 //<Иконочные шрифты>==========================================================================================
-@import "icons";
+@import "libs/icons";
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
@@ -23,121 +23,79 @@ $fontSize: 16;
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1250; 
+$maxWidthContainer: 1250;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
 $mainColor: #000;
-$grayColor: #4F4F4F;
-$blueColor: #2F80ED;
-$yellowColor: #FFCF10;
-$whiteColor: #FFFFFF;
+$grayColor: #4f4f4f;
+$blueColor: #2f80ed;
+$yellowColor: #ffcf10;
+$whiteColor: #ffffff;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
-@import "null";
+@import "libs/null";
 body {
-	color: $mainColor;
-	&._lock {
-		overflow: hidden;
-	}
+   color: $mainColor;
+   &._lock {
+      overflow: hidden;
+   }
 }
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	&._loaded {
-	}
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   &._loaded {
+   }
 }
 //</ОБОЛОЧКА>===========================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 ._container {
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-	// border: 1px solid red;
-	padding: 0 19px;
-	// @media (max-width: $md1+px) {
-	// 	max-width: 970px;
-	// }
-	// @media (max-width: $md2+px) {
-	// 	max-width: 750px;
-	// }
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 15px;
-	}
+   max-width: $maxWidthContainer + px;
+   margin: 0 auto;
+   // border: 1px solid red;
+   padding: 0 19px;
+   // @media (max-width: $md1+px) {
+   // 	max-width: 970px;
+   // }
+   // @media (max-width: $md2+px) {
+   // 	max-width: 750px;
+   // }
+   @media (max-width: $md3+px) {
+      max-width: none;
+      padding: 0 15px;
+   }
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-@import "forms";
-@import "ui";
+@import "libs/forms";
+@import "libs/ui";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 //@import "datepicker";
 //@import "lightgallery";
 //@import "pagging";
-@import "popup";
-@import "header";
-@import "footer";
+@import "libs/popup";
+@import "libs/header";
+@import "libs/footer";
 @import "sections/vacancy";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
-	flex: 1 1 auto;
+   flex: 1 1 auto;
 }
 //===================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
-section.vacancy {
-	.vacancy__container._container {
-		h1.description__title {
-			p {}
-		}
-		h3.description__subtitle {
-			p {}
-		}
-		.description__img._ibg {
-			img {}
-		}
-		.vacancy__description.description-vacancy {
-			.description-vacancy__body {
-				.description-vacancy__item {
-					.description-vacancy__star._icon-star {}
-					.description-vacancy__text {
-						p {}
-					}
-				}
-				.description-vacancy__item {
-					.description-vacancy__star._icon-star {}
-					.description-vacancy__text {
-						p {}
-					}
-				}
-				.description-vacancy__item {
-					.description-vacancy__star._icon-star {}
-					.description-vacancy__text {}
-				}
-				.description-vacancy__item {
-					.description-vacancy__star._icon-star {}
-					.description-vacancy__text {
-						p {}
-					}
-				}
-			}
-			p.description-vacancy__salary {}
-			a.description-vacancy__link.btn {}
-		}
-	}
-}
-

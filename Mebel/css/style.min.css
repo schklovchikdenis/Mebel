@@ -267,8 +267,8 @@ body._lock {
   align-items: center;
   text-align: center;
   border-radius: 8px;
-  background-color: #2F80ED;
-  color: #FFFFFF;
+  background-color: #2f80ed;
+  color: #ffffff;
   text-transform: uppercase;
   transition: box-shadow 0.3s ease 0s;
 }
@@ -387,7 +387,7 @@ textarea:focus {
   padding: 0px 20px;
   font-size: 16px;
   line-height: 140%;
-  color: #4F4F4F;
+  color: #4f4f4f;
   border: 1px solid #828282;
   height: 50px;
 }
@@ -1003,9 +1003,9 @@ body.ie ._ibg img {
   font-size: 16px;
   line-height: 19px;
   display: flex;
-  color: #2F80ED;
+  color: #2f80ed;
   height: 40px;
-  border: 2px solid #2F80ED;
+  border: 2px solid #2f80ed;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
@@ -1015,8 +1015,8 @@ body.ie ._ibg img {
 }
 @media (any-hover: hover) {
   .link__phone:hover {
-    color: #FFFFFF;
-    background-color: #2F80ED;
+    color: #ffffff;
+    background-color: #2f80ed;
     box-shadow: 4px 12px 40px rgba(47, 128, 237, 0.35);
     transition: all 0.3s ease 0s;
   }
@@ -1030,11 +1030,11 @@ body.ie ._ibg img {
 ._icon-phone {
   display: none;
   font-size: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 40px;
   width: 40px;
-  background-color: #2F80ED;
-  border: 1px solid #2F80ED;
+  background-color: #2f80ed;
+  border: 1px solid #2f80ed;
   border-radius: 5px;
   margin: 0px 0px 0px 20px;
 }
@@ -1260,7 +1260,7 @@ body.ie ._ibg img {
 }
 .description-vacancy__star {
   font-size: 40px;
-  color: #2F80ED;
+  color: #2f80ed;
   margin: 0px 12px 0px 0px;
 }
 .description-vacancy__text {
