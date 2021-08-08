@@ -1,5 +1,48 @@
-footer{}
+.footer {
+   &__wrapper {
+      padding: 40px;
+      background: rgba(242, 242, 242, 0.5);
+      border-radius: 12px;
+   }
+   &__body {
+      @media (max-width: 740px) {
+         flex: 0 1 100%;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+   &__block-left{
+      @media (max-width: 740px){
+         margin-bottom: 40px;
+      }
+   }
+   &__phone {
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 644px) {
+         display: flex;
+         flex: 0 1 100%;
+         flex-wrap: wrap;
+         p {
+            margin-bottom: 16px;
+         }
+      }
+   }
+   &__link-phone {
+      @media (max-width: 740px) {
+         display: flex;
+      }
+   }
+   &__icon-phone {
+      @media (max-width: 920px) {
+         display: block;
+      }
+      @media (max-width: 740px) {
+         display: none;
+      }
+   }
+}
 //====================================================================================================
 
 //====================================================================================================
-
