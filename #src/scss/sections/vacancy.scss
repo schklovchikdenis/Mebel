@@ -1,8 +1,16 @@
 .vacancy {
-   padding: 176px 0px 48px 0px;
-   @media (max-width: $md4+px) {
-      padding-top: 100px;
+   // .vacancy__wrapper
+   &__wrapper {
+      padding: 176px 0px 75px 0px;
+      @media (max-width: $md4+px) {
+         padding-top: 100px;
+      }
    }
+   // .vacancy__container
+   &__container {
+      position: relative;
+   }
+   // .vacancy__title
    &__title {
       margin-bottom: 68px;
       display: flex;
@@ -20,7 +28,7 @@
          }
       }
    }
-
+   // .vacancy__subtitle
    &__subtitle {
       display: flex;
       @media (max-width: 760px) {
@@ -58,7 +66,7 @@
          }
       }
    }
-
+   // .vacancy__img
    &__img {
       text-align: center;
       .girl__image {
@@ -79,10 +87,6 @@
          }
       }
    }
-}
-
-.vacancy__container {
-   position: relative;
 }
 
 // .description-vacancy

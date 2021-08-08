@@ -1137,13 +1137,16 @@ body.ie ._ibg img {
   }
 }
 
-.vacancy {
-  padding: 176px 0px 48px 0px;
+.vacancy__wrapper {
+  padding: 176px 0px 75px 0px;
 }
 @media (max-width: 479.98px) {
-  .vacancy {
+  .vacancy__wrapper {
     padding-top: 100px;
   }
+}
+.vacancy__container {
+  position: relative;
 }
 .vacancy__title {
   margin-bottom: 68px;
@@ -1251,10 +1254,6 @@ body.ie ._ibg img {
   .vacancy__img .girl__image {
     top: -20px;
   }
-}
-
-.vacancy__container {
-  position: relative;
 }
 
 .description-vacancy {
