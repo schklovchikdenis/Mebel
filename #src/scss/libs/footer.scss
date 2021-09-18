@@ -18,12 +18,12 @@
       }
    }
    &__phone {
-      justify-content: center;
       align-items: center;
       @media (max-width: 644px) {
          display: flex;
          flex: 0 1 100%;
          flex-wrap: wrap;
+         justify-content: center;
          p {
             margin-bottom: 16px;
          }
