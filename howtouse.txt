@@ -28,7 +28,7 @@ npm rebuild node-sass
 npm install sass gulp-sass --save-dev
 --------------------------------------
 Ошибка Pyton
-Решения:
+Решени:
 npm install --global windows-build-tools
 --------------------------------------
 Ошибка imagemin.

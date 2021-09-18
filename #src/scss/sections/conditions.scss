@@ -81,8 +81,8 @@
          color: $blueColor;
          font-size: 48px;
          line-height: 64px;
-         top: 6px;
-         left: calc(50% - 46px / 2);
+         top: 4px;
+         left: calc(50% - 50px / 2);
       }
       &:after {
          content: "";
@@ -134,12 +134,19 @@
    display: flex;
    background: #ffcf10;
    border-radius: 12px;
-   padding: 28px 152px 28px 280px;
+   // padding: 28px 152px 28px 280px;
+   @include adaptiv-value("padding-right", 152, 13, 1);
+   @include adaptiv-value("padding-left", 280, 76, 1);
+   @include adaptiv-value("padding-top", 28, 20, 1);
+   @include adaptiv-value("padding-bottom", 28, 14, 1);
 
+   // padding-top: 28px;
+   // padding-bottom: 28px;
    // .info__text
    &__text {
       position: relative;
       font-size: 20px;
+      @include adaptiv-value("font-size", 20, 15.8, 1);
       line-height: 140%;
       &::before {
          position: absolute;
@@ -154,8 +161,9 @@
          align-items: center;
          font-family: Roboto Slab;
          font-size: 24px;
-         left: -71px;
-         top:-6px;
+         // left: -71px;
+         @include adaptiv-value("left", -71, -50, 1);
+         // top: -6px;
       }
    }
 }
