@@ -1,5 +1,4 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
-
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
@@ -269,7 +268,6 @@ body.ie {
    &-body {
       display: flex;
       flex: 0 1 50%;
-		
    }
 
    // .block-left
@@ -277,13 +275,12 @@ body.ie {
       flex: 0 0 320px;
       display: flex;
       // justify-content: flex-start;
-		
       align-items: center;
    }
+
    // .block-right
    &-right {
       display: flex;
-      flex: 0 1 100%;
       align-items: center;
    }
 
@@ -327,7 +324,6 @@ body.ie {
       border-radius: 8px;
       justify-content: center;
       align-items: center;
-      margin: 0px 0px 0px 32px;
       flex: 0 1 280px;
       transition: all 0.3s ease 0s;
       @media (any-hover: hover) {
@@ -338,9 +334,7 @@ body.ie {
             transition: all 0.3s ease 0s;
          }
       }
-      @media (max-width: 1010px) {
-         display: none;
-      }
+      
    }
 }
 // ._icon-phone
@@ -353,8 +347,5 @@ body.ie {
    background-color: $blueColor;
    border: 1px solid $blueColor;
    border-radius: 5px;
-   margin: 0px 0px 0px 20px;
-	@media (max-width: 1010px) {
-         display: block;
-      }
+   margin: 0px 0px 0px 20px;   
 }

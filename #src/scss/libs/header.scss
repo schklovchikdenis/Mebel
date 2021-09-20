@@ -21,28 +21,46 @@
          padding: 10px 0px;
       }
    }
-   &__left {
+   // .header__block-body
+   &__block-body {
+   }
+   // .header__block-left
+   &__block-left {
       @media (max-width: 420px) {
          flex: 0 1 320px;
       }
    }
-   &__text {
+   // .header__block-right
+   &__block-right {
+      flex: 0 1 100%;
+   }
+
+   // .header__text
+   &__block-text {
       @media (max-width: 420px) {
          display: none;
       }
    }
-   &__phone {
+   // .header__block-phone
+   &__block-phone {
       p {
          @media (max-width: 660px) {
             display: none;
          }
       }
    }
+   // .header__link-phone
    &__link-phone {
-      
+      margin: 0px 0px 0px 32px;
+      @media (max-width: 1010px) {
+         display: none;
+      }
    }
+   // .header__icon-phone
    &__icon-phone {
-      
+      @media (max-width: 1010px) {
+         display: block;
+      }
    }
 }
 
